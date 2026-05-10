@@ -40,9 +40,11 @@ a {
 
 .site-header {
   border-bottom: 1px solid var(--line);
-  background: rgba(15, 15, 15, 0.96);
-  position: relative;
+  background: rgba(15, 15, 15, 0.92);
+  position: sticky;
+  top: 0;
   z-index: 10;
+  backdrop-filter: blur(10px);
 }
 
 .nav-wrap {
