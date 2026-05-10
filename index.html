@@ -15,7 +15,7 @@
         <a href="#about">About</a>
         <a href="#inside">Inside</a>
         <a href="#author">Author</a>
-        <a class="nav-button" href="mailto:hello@badboards.org?subject=Bad%20Boards%20launch%20list">Join the List</a>
+        <a class="nav-button" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -34,8 +34,8 @@
           <p class="body-large"><em>Bad Boards</em> is a practical field guide for nonprofit executive directors, CEOs, and senior staff dealing with board behavior that derails the work.</p>
 
           <div class="button-row">
-            <a class="button primary" href="mailto:hello@badboards.org?subject=Bad%20Boards%20launch%20list">Join the Launch List</a>
-            <a class="button secondary" href="mailto:hello@badboards.org?subject=Bad%20Boards%20review%20copy">Request a Review Copy</a>
+            <a class="button primary disabled-button" href="#" aria-disabled="true">Coming Soon on Amazon</a>
+            <a class="button secondary" href="#inside">About the Book</a>
           </div>
         </div>
 
@@ -92,15 +92,50 @@
       </div>
     </section>
 
+    <section id="contact" class="section section-panel">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="eyebrow red">Contact</p>
+          <h2>Questions about <em>Bad Boards</em>?</h2>
+          <p class="copy-block contact-copy">For speaking, media, organizational inquiries, or questions about the book, use the form below.</p>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/xeenpyje" method="POST">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" autocomplete="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" autocomplete="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="organization">Organization or role <span>optional</span></label>
+            <input id="organization" type="text" name="organization" />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <input type="hidden" name="_subject" value="Bad Boards website inquiry" />
+          <button class="button primary form-button" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
     <section class="final-cta">
       <div class="wrap cta-grid">
         <div>
           <p class="eyebrow red">Because the work still matters</p>
-          <h2>Be the first to know when <em>Bad Boards</em> is available.</h2>
+          <h2><em>Bad Boards</em> is coming soon.</h2>
         </div>
         <div class="cta-buttons">
-          <a class="button primary" href="mailto:hello@badboards.org?subject=Bad%20Boards%20launch%20list">Join the Launch List</a>
-          <a class="button secondary gold-border" href="mailto:hello@badboards.org?subject=Bad%20Boards%20review%20copy">Request a Review Copy</a>
+          <a class="button primary disabled-button" href="#" aria-disabled="true">Coming Soon on Amazon</a>
+          <a class="button secondary gold-border" href="#contact">Contact Keri</a>
         </div>
       </div>
     </section>
