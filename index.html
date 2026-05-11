@@ -92,6 +92,43 @@
       </div>
     </section>
 
+    <section id="contact" class="section section-panel">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="eyebrow red">Contact</p>
+          <h2>Questions about <em>Bad Boards</em>?</h2>
+          <p class="copy-block contact-copy">For speaking, media, organizational inquiries, or questions about the book, use the form below.</p>
+        </div>
+
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xeenpyje" method="POST">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" autocomplete="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" autocomplete="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="organization">Organization or role <span>optional</span></label>
+            <input id="organization" type="text" name="organization" />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <input type="hidden" name="_subject" value="Bad Boards website inquiry" />
+          <input type="hidden" name="source_site" value="badboards.org">
+          <p id="form-status" aria-live="polite"></p>
+          <button class="button primary form-button" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
     <section class="final-cta">
       <div class="wrap cta-grid">
         <div>
@@ -146,6 +183,5 @@
       });
     }
   </script>
-
 </body>
 </html>
