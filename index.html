@@ -172,8 +172,8 @@
           });
 
           if (response.ok) {
-            status.textContent = "Thank you. Your message has been sent.";
             form.reset();
+            form.innerHTML = '<p id="form-status" aria-live="polite">Thank you. Your message has been sent.</p>';
           } else {
             status.textContent = "Something went wrong. Please try again.";
           }
