@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playfair+Display:wght@600;700;800&display=swap");
+
 * { box-sizing: border-box; }
 
 :root {
@@ -55,10 +57,10 @@ a {
 }
 
 .brand {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.15rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
+  font-family: "Archivo Black", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
   color: white;
 }
 
@@ -67,10 +69,10 @@ a {
 .nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 24px;
   color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 700;
+  font-size: 0.72rem;
+  font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -80,8 +82,8 @@ a {
 .nav-button {
   background: var(--gold);
   color: #111;
-  padding: 10px 18px;
-  border-radius: 999px;
+  padding: 9px 17px;
+  border-radius: 10px;
 }
 
 .nav-button:hover {
@@ -123,7 +125,7 @@ a {
   grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
   gap: 56px;
-  padding: 88px 0;
+  padding: 76px 0;
 }
 
 .eyebrow {
@@ -139,20 +141,20 @@ a {
 
 h1,
 h2 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   color: white;
   margin: 0;
-  line-height: 0.98;
+  line-height: 1.02;
 }
 
 h1 {
-  font-size: clamp(4rem, 9vw, 7rem);
-  letter-spacing: -0.04em;
+  font-size: clamp(3.25rem, 7vw, 5.75rem);
+  letter-spacing: -0.035em;
 }
 
 h2 {
-  font-size: clamp(2.4rem, 5vw, 4rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(1.85rem, 3.4vw, 3rem);
+  letter-spacing: -0.025em;
 }
 
 h3 {
@@ -163,11 +165,11 @@ h3 {
 
 .subtitle {
   color: var(--gold);
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: clamp(1.35rem, 2.35vw, 1.85rem);
   font-weight: 800;
   max-width: 720px;
-  line-height: 1.12;
-  margin: 24px 0 0;
+  line-height: 1.16;
+  margin: 22px 0 0;
 }
 
 .hook {
@@ -199,12 +201,12 @@ h3 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  min-height: 48px;
-  border-radius: 999px;
-  padding: 13px 28px;
+  min-height: 44px;
+  border-radius: 10px;
+  padding: 11px 24px;
   font-weight: 800;
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   border: 0;
   cursor: pointer;
 }
@@ -254,7 +256,7 @@ h3 {
   background: #222;
 }
 
-.section { padding: 72px 0; }
+.section { padding: 64px 0; }
 
 .section-panel {
   background: var(--panel);
@@ -269,6 +271,17 @@ h3 {
 }
 
 .copy-block p { margin: 0 0 20px; }
+
+.book-note {
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid #2f2f2f;
+}
+
+.book-note h3 {
+  margin-bottom: 12px;
+  color: white;
+}
 
 .section-intro { max-width: 780px; }
 
@@ -379,11 +392,18 @@ h3 {
   margin-top: 4px;
 }
 
+#form-status {
+  min-height: 1.4em;
+  color: var(--gold);
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
 .final-cta {
   background: #1a1111;
   border-top: 1px solid #3a1f1f;
   border-bottom: 1px solid #3a1f1f;
-  padding: 56px 0;
+  padding: 48px 0;
 }
 
 .cta-grid {
@@ -426,7 +446,7 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .hero-grid { padding: 64px 0; }
+  .hero-grid { padding: 56px 0; }
 
   .card-grid { grid-template-columns: 1fr; }
 
