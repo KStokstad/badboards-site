@@ -1,27 +1,48 @@
-# Bad Boards Coming Soon Landing Page
+# Bad Boards
 
-This is a simple static coming soon page for badboards.org.
+Landing page for [badboards.org](https://badboards.org).
 
-## Files
+## Site files
 
-- `index.html`
-- `styles.css`
-- `bad-boards-cover.png` placeholder
-- `keri-stokstad-author-photo.jpg` placeholder
+- `index.html` — page content
+- `styles.css` — styles
+- `bad-boards-cover.jpg` — book cover
+- `keri-stokstad-author-photo.jpg` — author photo
+- `favicon.svg`, `favicon.ico`, `apple-touch-icon.png` — live site favicons
 
-Replace the placeholder images with the final cover and author photo using the same filenames.
+## Favicon kit (other sites)
 
-## Git commands
+Shared favicon bundles for sibling projects live in `favicons/`:
 
-Copy these files into:
+| Folder | Site |
+|--------|------|
+| `toolkit-badboards` | toolkit.badboards.org |
+| `civiccongruence` | civiccongruence.org |
+| `decathecting` | decathecting.com |
+| `honor-flight` | keristokstadwrites.com / honor-flight |
+| `keristokstad` | keristokstad.com |
+| `communitymediavoices` | communitymediavoices.org |
+| `orrerymap` | orrerymap.com |
 
-`C:\Users\18057\Documents\Projects\badboards-site`
+Each folder contains: `favicon.svg`, `favicon.ico`, `favicon-16x16.png`, `apple-touch-icon.png`.
 
-Then run:
+Copy a folder into a project's `public/` directory (or site root for static HTML) and add to `<head>`:
+
+```html
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+```
+
+## Sync local with GitHub
 
 ```bash
-git add .
-git commit -m "Add Bad Boards coming soon landing page"
-git branch -M main
-git push -u origin main
+git pull origin main
+```
+
+If you have local-only changes you want to discard:
+
+```bash
+git fetch origin
+git reset --hard origin/main
 ```
