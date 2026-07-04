@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="goldSphere" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#f0d78c"/>
+      <stop offset="55%" stop-color="#c9a227"/>
+      <stop offset="100%" stop-color="#8a6914"/>
+    </radialGradient>
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c872"/>
+      <stop offset="100%" stop-color="#a8841a"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#0a0a0a"/>
+  <ellipse cx="256" cy="256" rx="168" ry="56" fill="none" stroke="url(#goldRing)" stroke-width="8" transform="rotate(-18 256 256)"/>
+  <ellipse cx="256" cy="256" rx="120" ry="40" fill="none" stroke="url(#goldRing)" stroke-width="7" transform="rotate(24 256 256)"/>
+  <circle cx="256" cy="256" r="58" fill="url(#goldSphere)"/>
+  <circle cx="332" cy="244" r="18" fill="url(#goldSphere)"/>
+  <circle cx="196" cy="214" r="16" fill="url(#goldSphere)"/>
+  <circle cx="318" cy="292" r="16" fill="url(#goldSphere)"/>
+</svg>
