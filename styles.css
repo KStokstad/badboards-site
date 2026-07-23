@@ -299,6 +299,10 @@ h3 {
   align-items: center;
 }
 
+.author-grid .copy-block {
+  margin-top: 24px;
+}
+
 .photo-frame {
   background: #222;
   border: 1px solid #343434;
