@@ -227,12 +227,6 @@ h3 {
 
 .gold-border:hover { background: #231b0c; }
 
-.disabled-button {
-  cursor: default;
-  pointer-events: none;
-  opacity: 0.95;
-}
-
 .cover-area {
   width: min(100%, 420px);
   margin: 0 auto;
