@@ -223,10 +223,6 @@ h3 {
 
 .secondary:hover { background: var(--red); }
 
-.gold-border { border-color: var(--gold); }
-
-.gold-border:hover { background: #231b0c; }
-
 .cover-area {
   width: min(100%, 420px);
   margin: 0 auto;
@@ -378,28 +374,6 @@ h3 {
   margin-top: 4px;
 }
 
-.final-cta {
-  background: #1a1111;
-  border-top: 1px solid #3a1f1f;
-  border-bottom: 1px solid #3a1f1f;
-  padding: 56px 0;
-}
-
-.cta-grid {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 36px;
-  align-items: center;
-}
-
-.cta-grid h2 { max-width: 820px; }
-
-.cta-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .site-footer {
   text-align: center;
   color: var(--soft);
@@ -420,8 +394,7 @@ h3 {
   .hero-grid,
   .two-col,
   .author-grid,
-  .contact-grid,
-  .cta-grid {
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
@@ -433,18 +406,12 @@ h3 {
     order: -1;
     max-width: 320px;
   }
-
-  .cta-buttons {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 }
 
 @media (max-width: 540px) {
   .wrap { width: min(100% - 32px, 1120px); }
 
-  .button-row,
-  .cta-buttons {
+  .button-row {
     flex-direction: column;
   }
 
